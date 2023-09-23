@@ -38,12 +38,29 @@
 // -3 -> нет
 // 7 -> нет
 
-System.Console.WriteLine("Введите число:");
-int a=Convert.ToInt32(Console.ReadLine());
-if (a%2==0)
+// System.Console.WriteLine("Введите число:");
+// int a=Convert.ToInt32(Console.ReadLine());
+// if (a%2==0)
+// {
+//     System.Console.WriteLine($"{a} -> да");
+// }
+// else{
+//     System.Console.WriteLine($"{a} -> нет");
+// }
+
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+System.Console.WriteLine("Введите число N:");
+int n=Convert.ToInt32(Console.ReadLine());
+int a = 2;
+if (n > 1)
 {
-    System.Console.WriteLine($"{a} -> да");
-}
-else{
-    System.Console.WriteLine($"{a} -> нет");
+    while(a <= n)
+    {
+        Console.Write(a + " ");
+        a=a+2;
+    }
 }
